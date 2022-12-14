@@ -1,0 +1,48 @@
+.map-container{
+    width: 100%;
+    height: 50vh;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20rem;
+}
+
+.container__dashboard{
+    width: 40%;
+    background-color: blue;
+}
+
+.container__input{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 50vh;
+    justify-content: space-around;
+    border-style: solid;
+    border: none;
+    border-right: 2px solid lighten($blue,30%);
+}
+
+#start{
+    width: 75%;
+}
+
+#finish{
+    width: 75%;
+}
+
+@media only screen and (max-width: $breakpoint) {
+    .wrapper{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container__input{
+        border: none;
+        border-bottom: 2px solid lighten($blue,30%);
+    }
+};
